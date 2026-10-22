@@ -1,0 +1,193 @@
+{
+ "info": {
+  "name": "Larry Fried Chicken",
+  "kind": "Fried chicken · Tenders · Wraps · Burgers",
+  "tagline": "Le poulet frit croustillant à l’américaine de Tlemcen : tenders, wraps, box et burgers, sur place, à emporter ou en livraison.",
+  "phone": "+213 556 31 17 64",
+  "phone_display": "0556 31 17 64",
+  "whatsapp": "",
+  "address": "VMJ7+JVH, Mansourah, Tlemcen, Algérie (adresse postale à confirmer)",
+  "lat": 34.881498,
+  "lng": -1.334999,
+  "rating": "3,9",
+  "reviews_count": "138",
+  "instagram": "https://www.instagram.com/larry.fried.chicken/",
+  "open": true,
+  "notice": "",
+  "about": "Larry Fried Chicken, c’est l’enseigne de poulet frit halal de l’Ouest algérien (Tlemcen, Oran, Sidi Bel Abbès, Aïn Témouchent…), au logo étoilé de la Statue de la Liberté. À Tlemcen (Mansourah), les clients citent le Wrap Crunch Plus « une référence », la Large Box, la Larry Salad et le Family Pack. Une petite salle conviviale, ouverte tard tous les jours.",
+  "services": [
+   "Sur place",
+   "À emporter",
+   "Livraison (modalités à confirmer)",
+   "Ouvert tard",
+   "Accueil des familles"
+  ],
+  "price_note": "Prix à confirmer : aucune carte avec prix n’a été publiée en ligne pour ce restaurant. Le prix vous est annoncé lors de l’appel de confirmation."
+ },
+ "hours": [
+  {
+   "day": "Lundi",
+   "slots": "11:00-00:00"
+  },
+  {
+   "day": "Mardi",
+   "slots": "11:00-00:00"
+  },
+  {
+   "day": "Mercredi",
+   "slots": "11:00-00:00"
+  },
+  {
+   "day": "Jeudi",
+   "slots": "11:00-00:00"
+  },
+  {
+   "day": "Vendredi",
+   "slots": "05:00-00:00"
+  },
+  {
+   "day": "Samedi",
+   "slots": "11:00-00:00"
+  },
+  {
+   "day": "Dimanche",
+   "slots": "11:00-00:00"
+  }
+ ],
+ "menu": [
+  {
+   "name": "Box & partage",
+   "note": "Composition à confirmer",
+   "items": [
+    {
+     "name": "Large Box",
+     "price": "",
+     "desc": "Box poulet frit Larry (composition à confirmer).",
+     "tag": "Cité par les clients",
+     "img": "assets/img/plateau-tenders.webp"
+    },
+    {
+     "name": "Family Pack",
+     "price": "",
+     "desc": "Pack familial de poulet frit, à partager (composition à confirmer)."
+    }
+   ]
+  },
+  {
+   "name": "Poulet frit",
+   "items": [
+    {
+     "name": "Tenders",
+     "price": "",
+     "desc": "Filets de poulet panés croustillants (quantité à confirmer)."
+    },
+    {
+     "name": "Nuggets",
+     "price": "",
+     "desc": "Nuggets croustillants (quantité à confirmer)."
+    },
+    {
+     "name": "Ailes de poulet épicées",
+     "price": "",
+     "desc": "Wings épicées (quantité à confirmer)."
+    }
+   ]
+  },
+  {
+   "name": "Wraps, sandwichs & burgers",
+   "items": [
+    {
+     "name": "Wrap Crunch Plus",
+     "price": "",
+     "desc": "Le wrap signature de Larry (garniture à confirmer).",
+     "tag": "« Une référence »"
+    },
+    {
+     "name": "Sandwich",
+     "price": "",
+     "desc": "Sandwich poulet (garniture à confirmer)."
+    },
+    {
+     "name": "Tacos",
+     "price": "",
+     "desc": "Garniture à confirmer."
+    },
+    {
+     "name": "Burger",
+     "price": "",
+     "desc": "Garniture à confirmer."
+    }
+   ]
+  },
+  {
+   "name": "Salades & pizzas",
+   "items": [
+    {
+     "name": "Larry Salad",
+     "price": "",
+     "desc": "La salade maison de Larry (composition à confirmer)."
+    },
+    {
+     "name": "Pizza",
+     "price": "",
+     "desc": "Variétés et tailles à confirmer."
+    }
+   ]
+  }
+ ],
+ "order_options": {
+  "enabled": true,
+  "sauces": [],
+  "extras": []
+ },
+ "gallery": [
+  {
+   "src": "assets/img/plateau-tenders.webp",
+   "alt": "Tenders, nuggets et frites Larry Fried Chicken (photo de l’enseigne, page Yassir Food – Larry Oran)"
+  }
+ ],
+ "reviews": [
+  {
+   "author": "Client Google",
+   "text": "Wrap crunch plus ? A reference. This place is the reason i started eating in Akid again, perfectly prices, perfectly cooked. Even the manager is great, I'd highly recommend.",
+   "date": "mars 2022",
+   "rating": 5,
+   "source": "Avis Google (relayé par exa.ai), en anglais"
+  },
+  {
+   "author": "Client Google",
+   "text": "Loved Large Box And Larry Salad, The Service is Fast 10min max is crazy.",
+   "date": "mai 2025",
+   "rating": 5,
+   "source": "Avis Google (relayé par exa.ai), en anglais"
+  },
+  {
+   "author": "Abdel Raouf D.",
+   "text": "Si vous visitez Tlemcen, il faut absolument goûter les plats et sandwiches de Larry Chicken. Service impeccable, personnel souriant, nourriture très bonne, ça sort de l’ordinaire.",
+   "date": "à confirmer",
+   "rating": 5,
+   "source": "Avis Google (relayé par winrouh.com)"
+  },
+  {
+   "author": "D. Z.",
+   "text": "Plats très bons, le personnel est agréable et le service est rapide. Je recommande vivement.",
+   "date": "2025",
+   "rating": 5,
+   "source": "Avis Google (relayé par winrouh.com)"
+  },
+  {
+   "author": "Client Google",
+   "text": "One of the best places I've been to, the food is super delicious, the restaurant might be a bit small but the food is just so awesome.",
+   "date": "mai 2023",
+   "rating": 5,
+   "source": "Avis Google (relayé par exa.ai), en anglais"
+  },
+  {
+   "author": "Client Google",
+   "text": "Delicious food. Good prices. Slow service somehow, but it's so good in other way, just give it a try.",
+   "date": "janv. 2024",
+   "rating": 4,
+   "source": "Avis Google (relayé par exa.ai), en anglais"
+  }
+ ]
+}
