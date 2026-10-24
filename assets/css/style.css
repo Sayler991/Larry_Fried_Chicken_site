@@ -119,3 +119,9 @@ body:has(.od-bar:not([hidden])) .fab{display:none}
 @media(max-width:560px){.topband{grid-template-columns:repeat(2,1fr);height:clamp(200px,60vw,300px)}.topband img:nth-child(n+3){display:none}}
 .hero{background:linear-gradient(180deg,rgba(20,10,5,.78) 0,rgba(31,18,11,.84) 55%,rgba(20,10,5,.96) 100%),url(../img/ig/salle-larry.webp) center/cover no-repeat;min-height:70vh}
 @media(min-width:900px){.hero-in{padding-right:0;max-width:760px;margin-left:max(20px,calc((100vw - 1140px)/2))}}
+/* ---- v4 : gros "LARRY" en petites ampoules (style enseigne) en fond de l'accueil ---- */
+.hero{padding-bottom:calc(min(92vw,520px)*.36 + 90px)}
+.hero::before{content:"";position:absolute;left:0;right:0;bottom:46px;height:calc(min(92vw,520px)*.36 + 10px);background:url(../img/larry-bulbs.svg?v=b4) center bottom/contain no-repeat;z-index:1;opacity:1;pointer-events:none;filter:drop-shadow(0 0 10px rgba(255,178,46,.55))}
+@media(min-width:900px){.hero{padding-bottom:calc(min(70vw,900px)*.35 + 100px)}.hero::before{height:calc(min(70vw,900px)*.35 + 10px);bottom:50px}}
+.liberty{z-index:0!important}
+.liberty{display:none!important}
