@@ -119,9 +119,78 @@ body:has(.od-bar:not([hidden])) .fab{display:none}
 @media(max-width:560px){.topband{grid-template-columns:repeat(2,1fr);height:clamp(200px,60vw,300px)}.topband img:nth-child(n+3){display:none}}
 .hero{background:linear-gradient(180deg,rgba(20,10,5,.78) 0,rgba(31,18,11,.84) 55%,rgba(20,10,5,.96) 100%),url(../img/ig/salle-larry.webp) center/cover no-repeat;min-height:70vh}
 @media(min-width:900px){.hero-in{padding-right:0;max-width:760px;margin-left:max(20px,calc((100vw - 1140px)/2))}}
-/* ---- v4 : gros "LARRY" en petites ampoules (style enseigne) en fond de l'accueil ---- */
-.hero{padding-bottom:calc(min(92vw,520px)*.36 + 90px)}
-.hero::before{content:"";position:absolute;left:0;right:0;bottom:46px;height:calc(min(92vw,520px)*.36 + 10px);background:url(../img/larry-bulbs.svg?v=b4) center bottom/contain no-repeat;z-index:1;opacity:1;pointer-events:none;filter:drop-shadow(0 0 10px rgba(255,178,46,.55))}
-@media(min-width:900px){.hero{padding-bottom:calc(min(70vw,900px)*.35 + 100px)}.hero::before{height:calc(min(70vw,900px)*.35 + 10px);bottom:50px}}
-.liberty{z-index:0!important}
+/* ---- v5 : refonte visuelle (mise en page, espacements, typographie, hiérarchie) ---- */
+:root{--r:20px;--sh:0 18px 40px -18px rgba(0,0,0,.65);--gold:#ffc65c}
+body{font-size:17px;line-height:1.65}
+h1,h2,h3{letter-spacing:.02em}
+h2{font-size:clamp(2.1rem,5.5vw,3.2rem);margin-bottom:.35em}
 .liberty{display:none!important}
+.stripes{height:5px}
+/* barre de navigation */
+.nav{padding:10px clamp(16px,4vw,40px);background:rgba(24,13,8,.88);border-bottom:1px solid rgba(255,198,92,.35)}
+.links a{font-size:.82rem;letter-spacing:.1em;font-weight:700;opacity:.9;position:relative;padding:6px 0}.links a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:2px;background:var(--o);transition:right .2s}.links a:hover{color:#fff;opacity:1}.links a:hover::after{right:0}
+.btn{padding:14px 26px;font-size:1rem;letter-spacing:.01em}
+.btn-green{box-shadow:0 10px 24px -8px rgba(227,38,47,.75);}
+.btn-green:hover{box-shadow:0 14px 28px -8px rgba(227,38,47,.85)}
+.btn-ghost{border-color:rgba(255,255,255,.55);background:rgba(255,255,255,.05);backdrop-filter:blur(4px)}
+/* bandeau photos : plus net, sans bandes collées */
+.topband{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;height:clamp(150px,26vw,280px);padding:6px;background:#140a05;border-bottom:0;position:relative}
+.topband img{border-radius:14px;width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.topband img:hover{transform:scale(1.02)}
+@media(max-width:560px){.topband{grid-template-columns:repeat(2,1fr);height:clamp(190px,56vw,260px)}}
+/* hero */
+.hero{min-height:0;display:flex;flex-direction:column;justify-content:center;padding:clamp(48px,9vw,110px) 0 clamp(56px,9vw,110px);background:linear-gradient(180deg,rgba(20,10,5,.92) 0,rgba(24,13,8,.7) 40%,rgba(20,10,5,.95) 100%),radial-gradient(ellipse at 80% 20%,rgba(194,65,12,.45),transparent 60%),url(../img/ig/salle-larry.webp) center/cover no-repeat}
+.hero::before{display:none!important;content:none}
+.hero-sky{display:none}
+.hero-in{max-width:1140px;margin:0 auto;padding:0 20px!important;width:100%}
+.kick{transform:none;border-radius:999px;padding:6px 14px;font-size:.74rem;letter-spacing:.18em;background:rgba(227,38,47,.95);box-shadow:0 6px 16px -6px rgba(227,38,47,.8)}
+.hero h1{font-size:clamp(3.2rem,12.5vw,6.8rem);line-height:.95;margin:.2em 0 .3em;text-shadow:0 4px 30px rgba(0,0,0,.55)}
+.hero h1 span{color:var(--o);text-shadow:0 4px 30px rgba(0,0,0,.55)}
+.lead{font-size:clamp(1.05rem,2.4vw,1.25rem);max-width:30em;color:#f6e3c6;margin:0 0 1.2em}
+.live-status{background:rgba(255,255,255,.12);backdrop-filter:blur(4px)}
+.cta{margin:26px 0 22px;gap:14px}
+.badges li{border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.06);font-size:.82rem;padding:6px 14px}
+@media(min-width:900px){
+ .hero-in{max-width:1140px!important;margin:0 auto!important;padding-right:360px!important}
+ .hero-logo{display:block;right:max(40px,calc((100vw - 1140px)/2 + 20px));top:50%;transform:translateY(-50%);width:300px;border:6px solid rgba(255,255,255,.92);box-shadow:0 30px 60px -20px rgba(0,0,0,.8),0 0 0 12px rgba(255,198,92,.18)}
+}
+/* bande défilante */
+.ticker{transform:none;font-size:1.15rem;letter-spacing:.06em;padding:12px 0;border-block:0;background:linear-gradient(90deg,#b9161e,#e3262f 40%,#ea580c)}
+/* sections */
+.sec{padding:clamp(56px,8vw,96px) 0}
+.sec-h{margin-bottom:28px;max-width:44rem}
+.sec .kick{background:none;box-shadow:none;padding:0;color:var(--o);letter-spacing:.2em;margin-bottom:.4em}
+.sec-h p.mut{font-size:1.02rem}
+/* carte */
+.tabs{background:rgba(31,18,11,.94);backdrop-filter:blur(8px);padding:12px 0;top:60px}
+.tabs a{border-color:rgba(255,255,255,.18);font-weight:700;padding:9px 18px}
+.tabs a.on{box-shadow:0 6px 16px -6px rgba(227,38,47,.8)}
+.cat{margin:40px 0 0}.cat h3{font-size:1.7rem;border-bottom:1px solid rgba(255,198,92,.35);padding-bottom:10px;margin-bottom:18px}
+.items{gap:14px}
+.item{padding:16px;border-radius:var(--r);border:1px solid rgba(255,198,92,.18);box-shadow:var(--sh);background:linear-gradient(160deg,#432816,#2f1d10);transition:transform .2s,border-color .2s}
+.item:hover{transform:translateY(-3px);border-color:rgba(255,198,92,.5)}
+.item img{border:0;border-radius:14px;width:104px;height:104px}
+.it-h b{font-size:1.1rem}
+.item p{font-size:.94rem;line-height:1.5}
+.od-intro{margin:6px 0 4px;max-width:none;border-color:rgba(227,38,47,.5)}
+/* à propos */
+.sec.alt{background:linear-gradient(180deg,#2a170d,#331b0f)}
+.split{gap:clamp(28px,5vw,64px)}
+#about-text{font-size:1.05rem;color:#f6e3c6}
+.chips li{background:rgba(255,255,255,.06);border-color:rgba(255,198,92,.3);padding:7px 14px}
+.about-photo,.gallery.big figure,.gallery figure,.gallery.big figure:nth-child(odd){transform:none!important;border:0;border-radius:var(--r);box-shadow:var(--sh)!important;background:#140a05}
+.about-photo figcaption,.gallery.big figcaption{background:#140a05;color:#cdb594}
+.gallery.big{gap:12px}.gallery.big img{aspect-ratio:1/1;transition:transform .4s}.gallery.big figure:hover img{transform:scale(1.04)}
+/* avis */
+.rev{box-shadow:var(--sh);border-radius:var(--r);padding:24px;border-top:4px solid var(--g)}
+.rev p{font-size:1rem;line-height:1.6}.rev footer{margin-top:10px}
+/* horaires */
+.hours th{font-weight:600;color:var(--mut)}.hours td{text-align:right;font-weight:600}.hours th,.hours td{padding:11px 4px}
+.hours tr.today{background:rgba(227,38,47,.22);border-radius:8px}.hours tr.today th{color:#fff}
+.addr{margin:18px 0 0}
+.map iframe{border:0;box-shadow:var(--sh);height:380px}
+/* pied de page */
+.foot{background:#120904;border-top:1px solid rgba(255,198,92,.25);padding:48px 0 110px}
+.foot p{max-width:46rem;margin-inline:auto}
+@media(prefers-reduced-motion:reduce){.item,.topband img,.gallery.big img{transition:none}}
+.it-t .tag{align-self:flex-start}
